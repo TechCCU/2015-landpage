@@ -1,10 +1,36 @@
 
 body {
-    background-color: lightblue;
+    text-align: center;
 }
 
+navbar {
+    margin-right 10%;
+    text-align: right;
+}
+
+cover {
+    background: url('images/cover.jpg') no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    margin-top: 15%;
+    text-align: center;
+}
 
 section {
-    background-color: orange;
+    margin auto;
+    width 80%;
+    background-color: #fafafa;
+}
+
+#scheduleTable {
+    margin: auto;
+    width: 60%;
 }
 

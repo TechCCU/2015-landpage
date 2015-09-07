@@ -1,40 +1,92 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf8"/>
+    <head>
+        <meta charset="utf8"/>
+        <link href="css/techccu.css" type="text/css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- 最新編譯和最佳化的 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <!-- 選擇性佈景主題 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <!-- 最新編譯和最佳化的 JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <title>TechCCU Workshop 2015</title>
 
-    <link href="css/techccu.css" type="text/css" rel="stylesheet"/>
-    <title>TechCCU Workshop 2015</title>
+    </head>
 
-</head>
-
-<body>
-    <div class="cover-background"></div>
-    <section id="info" class="section">
+    <body>
+        <nav id="navbar" class="navbar navbar-nav">
+            <span id="nav-mBtn">123</span>
+            <ul>
+                <li><a href="#info">簡介</a></li>
+                <li><a href="#traffic">交通資訊</a></li>
+                <li><a href="#schedule">議程</a></li>
+                <li><a href="#speakers">講者</a></li>
+            </ul>
+        </nav>
+        <!-- 背景圖片 -->
+        <div class="cover"></div>
+        <div class="header">TechCCU 2015 Workshop</div>
+        <section id="info" class="section">
             <p>
-            TechCCU 緣起
+            TechCCU 緣起</br>
             blahblah
             </p>
-            <span>時間
+            <span>時間</span>
             <div id="apply">
-                <a href="ticket/apply" target="_blank">立即報名</a>
+                <a href="ticker/apply" class="btn btn-info">立即報名</a>
             </div>
-    </section>
+        </section>
 
-    <section id="traffic" class="section">
-    </section>
+        <section id="traffic" class="section">
+            <h2>交通資訊</h2>
+        </section>
 
-    <section id="schedule" class="section">
-        <h2>議程</h2>
-        <table id="scheduleTable">
-        </table>
-    </section>
+        <section id="schedule" class="section">
+            <h2>議程</h2>
+            <table id="scheduleTable" class="table">
+                <thead>
+                    <tr>
+                        <th>時間</th>
+                        <th>講者</th>
+                        <th>主題</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00~08:55</td>
+                        <td>terces</td>
+                        <td>TechCCU 101</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section id="speakers" class="section">
-    </section>
+        <section id="speakers" class="section">
+            <h2>講者</h2>
+            <div class="speaker">
+                <h3 class="speaker-name">藏鏡人</h3>
+                <p class="spaker-content">順我者生，逆我者亡。</br>
+                隱身令天下，現身戮萬軍。</br>
+                藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。</br>
+                脫離三教外，不在五行中，轟動武林，驚動萬教萬惡的罪魁藏鏡人也！</br>
+                </p>
+            </div>
+        </section>
 
-    <section id="staffs" class="section">
-    </section>
+        <section id="staffs" class="section">
+            <h2>工作人員</h2>
+            <div class="staff">
+                <img/>
+                <h3 class="staff-name">terces</h3>
+                <p class="staff-info">打飯班</p>
+            </div>
+        </section>
 
-    <footer>
-    </footer>
+        <footer>
+            主辦單位：TechCCU</br>
+            協辦單位：</br>
+            ©2015 TechCCU, All Rights Reserved.</br>
+        </footer>
 </html>
