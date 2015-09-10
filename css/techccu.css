@@ -81,6 +81,11 @@ section .sectionShow {
 	width: 140px;
 }
 
+.staff {
+	width: 20%;
+	display: inline-block;
+}
+
 .staff-pic {
 	height: 90px;
 	width: 90px;
