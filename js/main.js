@@ -1,18 +1,17 @@
 
 $(document).ready(function() {
-    var navItems = $('nav').find('a');
-    var sectionList = document.getElementById('content').children;
-
     /* change section display */
     $('nav a').click(function(e) {
-        var activeClass = $('section.active');
+        var activeClass = $('section.sectionShow');
         var hideClass = $($(this).attr("href"));
+		$(this).removeClass("active");
         activeClass.fadeOut();
-        activeClass.removeClass("active");
-        activeClass.addClass("sectionHide");
+		activeClass.addClass("sectionHide");
+        activeClass.removeClass("sectionShow");
+        
         hideClass.fadeIn();
         hideClass.removeClass("sectionHide");
-        hideClass.addClass("active");
+        hideClass.addClass("sectionShow");
     });
 
 });

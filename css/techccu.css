@@ -14,13 +14,12 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 400px;
+    height: 250px;
     z-index: 50;
     overflow: hidden;
 }
 
 .header h1 {
-    padding: 5%;
     font-size: 6em;
     color: #e0e4e4;
     text-shadow: 1px 1px 3px rgba(0,30,0,0.5);
@@ -28,13 +27,14 @@ body {
 }
 
 .navbar {
-	top: 350;
+	padding-top: 200px;
+	top: 200px;
     bottom: 0;
     z-index: 100;
 }
 
 .headerWrap {
-    height: 400px;
+    height: 250px;
     top: 0;
     left: 0;
     right: 0;
@@ -43,10 +43,12 @@ body {
 .content {
     margin: auto;
     width: 80%;
+	height: 80%;
+	z-index: -1;
+	overflow: hidden;
 }
 
-section .active {
-    background: #ff0000;
+section .sectionShow {
 }
 
 .sectionHide {
