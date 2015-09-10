@@ -9,10 +9,9 @@ $(document).ready(function() {
 		activeClass.addClass("sectionHide");
 		activeClass.removeClass("sectionShow");
 		$(this).parent().addClass('active');
-		hideClass.fadeIn();
 		hideClass.removeClass("sectionHide");
 		hideClass.addClass("sectionShow");
+		hideClass.fadeIn();
+		
     });
-
 });
-

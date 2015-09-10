@@ -27,10 +27,14 @@ body {
 }
 
 .navbar {
-	padding-top: 200px;
-	top: 200px;
-    bottom: 0;
+	width: 62.5%
+	position: fixed;
     z-index: 100;
+}
+
+.navtext {
+	color: #B88451;
+	background: rgba(145,94,57,0.7);
 }
 
 .headerWrap {
@@ -53,6 +57,11 @@ section .sectionShow {
 
 .sectionHide {
     display: none;
+}
+
+#map {
+	width: 100%;
+	height: 360px;
 }
 
 #scheduleTable {

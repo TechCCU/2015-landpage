@@ -19,28 +19,28 @@
     <body>
         <div id="header" class="header">
             <h1>TechCCU 2015 Workshop</h1>
-            <nav id="navbar" class="col-md-4 col-md-offset-4">
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#info">簡介</a></li>
-                    <li role="presentation"><a href="#traffic">交通資訊</a></li>
-                    <li role="presentation"><a href="#schedule">議程</a></li>
-                    <li role="presentation"><a href="#speakers">講者</a></li>
-                    <li role="presentation"><a href="#staffs">工作人員</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="headerWrap"></div>
+		<nav id="navbar" class="navbar col-md-6 col-md-offset-4">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#info">簡介</a></li>
+                    <li ><a href="#traffic">交通資訊</a></li>
+                    <li ><a href="#schedule">議程</a></li>
+                    <li ><a href="#speakers">講者</a></li>
+                    <li ><a href="#staffs">工作人員</a></li>
+                </ul>
+        </nav>
         <div id="content" class="content">
-            <section id="info" class="col-md-12 ready">
+            <section id="info" class="col-md-12 sectionShow">
                 <div id="infotext" class="col-md-6 col-md-offset-2">
-                    <h1>簡介</h1>
+ 
                     <p>
                     blahblah</br>
                     」 第四回 羨殺 關雎 貢院 驚異 ，可 曰：. 己轉身 以測機 在一處 後竊聽 白圭志. 覽 矣 誨 耳. 也懊悔不了 ，愈聽愈惱 此是後話 饒爾去罷」. 第七回 第八回 招」 第二回. 冒認收了 出 吉安而來 矣 玉，不題 意 父親回衙 事 曰： 關雎. 曰： 矣 誨 關雎. 矣 去 此是後話 誨 ，愈聽愈惱 耳 ，可 饒爾去罷」 也懊悔不了. 此是後話 也懊悔不了 ，愈聽愈惱. 事 去 耳 關雎. 」 關雎 覽 ，可 意. 事 耳 誨 出 意. 曰： 矣 誨 事 ，可 關雎 意 」. 曰： 關雎 意 出 耳. 關雎 出 ，可 意. 曰： 誨 分得意 後竊聽 去 以測機 白圭志 己轉身 建章曰： ，可. 相域 ，可 矣 誨 驚異 第八回 事 關雎 去 羨殺 德泉淹. 第十回 不題 招」 貢院 第四回 德泉淹. 此是後話 」 ，愈聽愈惱 耳 饒爾去罷」 也懊悔不了 曰： 關雎. </br>
                     </p>
                 </div>
                 <div id="apply" class="col-md-3">
-                    <h2>活動資訊</h2>
+ 
                     <h3>時間</h3></br>
 					<span>2015/13/29</span></br>
 					<h3>地點</h3></br>
@@ -52,11 +52,13 @@
             </section>
 
             <section id="traffic" class="col-md-12 sectionHide">
-                <h2>交通資訊</h2>
+ 
+				<div id="map"></div>
+				<div id "trafficinfo">開車到中正</div>
             </section>
 
             <section id="schedule" class="col-md-12 sectionHide">
-                <h2>議程</h2>
+ 
                 <table id="scheduleTable" class="table">
                     <thead>
                         <tr>
@@ -71,12 +73,51 @@
                             <td>terces</td>
                             <td>TechCCU 101</td>
                         </tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>12:00~13:00</td>
+							<td colspan=2>午餐時間</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
+						<tr>
+							<td>09:00~09:50</td>
+							<td>TechCCU</td>
+							<td>便當101</td>
+						</tr>
                     </tbody>
                 </table>
             </section>
 
             <section id="speakers" class="col-md-12 sectionHide">
-                <h2>講者</h2>
+ 
                 <div class="speaker">
                     <h3 class="speaker-name">藏鏡人</h3>
                     <p class="spaker-content">順我者生，逆我者亡。</br>
@@ -88,8 +129,7 @@
             </section>
 
             <section id="staffs" class="col-md-12 sectionHide">
-                <h2>工作人員</h2>
-                <div class="staff">
+                 <div class="staff">
                     <img/>
                     <h3 class="staff-name">terces</h3>
                     <p class="staff-info">打飯班</p>
@@ -101,4 +141,31 @@
             主辦單位：TechCCU  協辦單位：</br>
             ©2015 TechCCU, All Rights Reserved.</br>
         </footer>
+	</body>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCVDLEcD6alO7DPLvyi4HVcXLtdJNhaA&callback=initGoogleMap"></script>
+	
+	<script>
+function initGoogleMap() {
+
+	var styleArray = [
+	{
+		featureType: 'all',
+		elementType: 'all',
+		stylers: [
+			{hue: '#ff1a00'},
+			{saturation: '-100'},
+			{lightness: '33'},
+			{gamma: 0.6}
+		]
+	}
+	];
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+	center: new google.maps.LatLng(23.559200, 120.465990),
+	scrollwheel: false,
+	styles: styleArray,
+	zoom: 14
+	});
+	}
+</script>
 </html>
