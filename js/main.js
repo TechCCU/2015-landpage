@@ -1,5 +1,5 @@
 
-$('document').ready(function() {
+$(document).ready(function() {
     var navItems = $('nav').find('a');
     var sectionList = document.getElementById('content').children;
 
