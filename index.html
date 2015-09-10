@@ -19,8 +19,9 @@
     <body>
         <div id="header" class="header">
             <h1>TechCCU 2015 Workshop</h1>
+			
         </div>
-        <div class="headerWrap"></div>
+        <div class="headerWrap">
 		<nav id="navbar" class="navbar col-md-6 col-md-offset-4">
                 <ul class="nav nav-pills">
                     <li class="active"><a href="#info">簡介</a></li>
@@ -30,6 +31,7 @@
                     <li ><a href="#staffs">工作人員</a></li>
                 </ul>
         </nav>
+		</div>
         <div id="content" class="content">
             <section id="info" class="col-md-12 sectionShow">
                 <div id="infotext" class="col-md-6 col-md-offset-2">
@@ -53,8 +55,20 @@
 
             <section id="traffic" class="col-md-12 sectionHide">
  
-				<div id="map"></div>
-				<div id "trafficinfo">開車到中正</div>
+				<div id="map" class="col-md-8"></div>
+				<div id "trafficinfo" class="col-md-4">
+					<h4>開車到中正</h4>
+					<p>經國道一號</br>
+					由民雄交流道下，往民雄方向沿著民雄外環道(民新路)前行約1.9公里，過民雄陸橋後左轉進入省道台一線，前行約600公尺，右轉入大學路三段後，沿著大學路往前行駛約4.2公里即可抵達本校。<br/>
+					經國道三號<br/>
+					[南下方向] 梅山交流道下→縣道162 (經過大林鎮公所)→左轉往民生路→往前行駛左轉大民北路→左轉到縣道106(大學路一段)→再行駛五分鐘即抵達中正大學<br/>
+					[北上方向] 竹崎交流道下→縣道166→民雄方向→再依照沿路之指示牌，即可抵達中正大學
+					</p>
+					<h4>火車</h4>
+					<p>搭乘火車至民雄站，出站後步行至民雄長壽會館轉乘嘉義縣公車。</p>
+					<h4>高鐵</h4>
+					<p>由嘉義高鐵站搭乘計程車至本校，路程約30-40分鐘。</p>
+				</div>
             </section>
 
             <section id="schedule" class="col-md-12 sectionHide">
@@ -118,8 +132,9 @@
 
             <section id="speakers" class="col-md-12 sectionHide">
  
-                <div class="speaker">
+                <div class="col-md-5 col-md-offset-1 speaker">
                     <h3 class="speaker-name">藏鏡人</h3>
+					<img class="img-circle speaker-pic" src="images/nobody_s.jpg">
                     <p class="spaker-content">順我者生，逆我者亡。</br>
                     隱身令天下，現身戮萬軍。</br>
                     藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。</br>
@@ -130,7 +145,7 @@
 
             <section id="staffs" class="col-md-12 sectionHide">
                  <div class="staff">
-                    <img/>
+                    <img class="img-circle staff-pic" src="images/terces_w.jpg">
                     <h3 class="staff-name">terces</h3>
                     <p class="staff-info">打飯班</p>
                 </div>
@@ -143,29 +158,4 @@
         </footer>
 	</body>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKCVDLEcD6alO7DPLvyi4HVcXLtdJNhaA&callback=initGoogleMap"></script>
-	
-	<script>
-function initGoogleMap() {
-
-	var styleArray = [
-	{
-		featureType: 'all',
-		elementType: 'all',
-		stylers: [
-			{hue: '#ff1a00'},
-			{saturation: '-100'},
-			{lightness: '33'},
-			{gamma: 0.6}
-		]
-	}
-	];
-
-	var map = new google.maps.Map(document.getElementById('map'), {
-	center: new google.maps.LatLng(23.559200, 120.465990),
-	scrollwheel: false,
-	styles: styleArray,
-	zoom: 14
-	});
-	}
-</script>
 </html>

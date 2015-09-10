@@ -15,3 +15,27 @@ $(document).ready(function() {
 		
     });
 });
+
+
+function initGoogleMap() {
+
+	var styleArray = [
+	{
+		featureType: 'all',
+		elementType: 'all',
+		stylers: [
+			{hue: '#ff1a00'},
+			{saturation: '-100'},
+			{lightness: '33'},
+			{gamma: 0.6}
+		]
+	}
+	];
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+	center: new google.maps.LatLng(23.559200, 120.465990),
+	scrollwheel: false,
+	styles: styleArray,
+	zoom: 14
+	});
+}
