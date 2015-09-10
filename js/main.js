@@ -2,16 +2,16 @@
 $(document).ready(function() {
     /* change section display */
     $('nav a').click(function(e) {
-        var activeClass = $('section.sectionShow');
-        var hideClass = $($(this).attr("href"));
-		$(this).removeClass("active");
-        activeClass.fadeOut();
+		var activeClass = $('section.sectionShow');
+		var hideClass = $($(this).attr("href"));
+		$(this).parents().find('.active').removeClass('active')
+		activeClass.fadeOut();
 		activeClass.addClass("sectionHide");
-        activeClass.removeClass("sectionShow");
-        
-        hideClass.fadeIn();
-        hideClass.removeClass("sectionHide");
-        hideClass.addClass("sectionShow");
+		activeClass.removeClass("sectionShow");
+		$(this).parent().addClass('active');
+		hideClass.fadeIn();
+		hideClass.removeClass("sectionHide");
+		hideClass.addClass("sectionShow");
     });
 
 });
