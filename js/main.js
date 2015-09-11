@@ -4,15 +4,17 @@ $(document).ready(function() {
     $('nav a').click(function(e) {
 		var activeClass = $('section.sectionShow');
 		var hideClass = $($(this).attr("href"));
-		$(this).parents().find('.active').removeClass('active')
-		activeClass.fadeOut();
-		activeClass.addClass("sectionHide");
-		activeClass.removeClass("sectionShow");
+		function showHide() {
+			activeClass.removeClass("sectionShow");
+			activeClass.addClass("sectionHide");
+			hideClass.removeClass("sectionHide");
+			hideClass.addClass("sectionShow");
+			hideClass.hide();
+			hideClass.fadeIn("slow");
+		}
+		$(this).parents().find('.active').removeClass('active');
 		$(this).parent().addClass('active');
-		hideClass.removeClass("sectionHide");
-		hideClass.addClass("sectionShow");
-		hideClass.fadeIn();
-		
+		activeClass.fadeOut( "slow", showHide);
     });
 });
 
