@@ -40,4 +40,9 @@ function initGoogleMap() {
 	styles: styleArray,
 	zoom: 14
 	});
+	
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(23.562159, 120.477802),
+		map: map
+	});
 }
