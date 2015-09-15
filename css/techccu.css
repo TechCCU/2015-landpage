@@ -40,11 +40,6 @@ body {
 	overflow: hidden;
 }
 
-.navtext {
-	color: #B88451;
-	background: rgba(145,94,57,0.7);
-}
-
 .headerWrap {
     height: 300px;
     top: 0;
@@ -67,10 +62,36 @@ section .sectionShow {
     display: none;
 }
 
+#info p {
+	padding-top: 20px;
+}
+
+#apply h3 {
+	font-size: 1.625em;
+	font-weight: bold;
+	border-bottom: 2px double #D2BF85;
+}
+
+#apply span {
+	font-size: 1em;
+}
+
+
 #map {
 	height: 420px;
 }
 
+#trafficinfo h4 {
+	font-size: 1.3em;
+	line-height: 1.8em;
+	font-style: bold;
+}
+
+#trafficinfo p {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
 
 #scheduleTable {
     margin: auto;
@@ -81,20 +102,40 @@ section .sectionShow {
 	width: 40%;
 }
 
+.speaker h3 {
+	1.2em;
+}
+
 .speaker-pic {
 	height: 140px;
 	width: 140px;
+	padding: 10px;
+}
+
+.speaker-content {
+	padding: 10px;
 }
 
 .staff {
-	width: 20%;
+	width: 18%;
 	display: inline-block;
+	margin: none;
+	padding: none;
 }
 
 .staff-pic {
-	height: 90px;
-	width: 90px;
+	height: 70px;
+	width: 70px;
 }
+
+.staff-name {
+	font-size: 16px;
+}
+
+.staff-info {
+	font-size: 12px;
+}
+
 
 a {
     text-decoration: none;
