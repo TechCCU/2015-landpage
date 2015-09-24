@@ -28,7 +28,7 @@ body {
 	padding-top: 50px;
 	height: 250px;
     font-size: 6em;
-    color: #f0e4f4;
+    color: #FAFFFA;
     text-shadow: 1px 1px 3px rgba(0,30,0,0.5);
     z-index: 99;
 }
@@ -151,11 +151,54 @@ a:hover {
 
 footer {
     width: 100%;
-    position: fixed;
+    position: relative;
     color: #000000;
     height: 4em;
     text-align: center;
+	margin-top: 10%;
     bottom: 0;
     z-index: 50;
     overflow: hidden;
+}
+
+@media screen and (max-width: 1110px) {
+	.header {
+		height: 190px;
+	}
+	.header h1 {
+		padding-top: 10px;
+		font-size: 4em;
+	}
+	.headerWrap {
+		height: 240px;
+	}
+	.navbar {
+		padding-top: 190px;
+	}
+	.speaker {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		/*background: #5C2E00;*/
+		height: 190px;
+	}
+	.header h1 {
+		padding-top: 10px;
+		font-size: 3.5em;
+	}
+	.headerWrap {
+		height: 240px;
+	}
+	.navbar {
+		padding-top: 190px;
+	}
+	.speaker {
+		width: 80%;
+	}
+	.staff {
+		width: 40%;
+	}
 }
