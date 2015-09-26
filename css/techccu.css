@@ -81,16 +81,13 @@ section .sectionShow {
 	height: 420px;
 }
 
-#trafficinfo h4 {
-	font-size: 1.3em;
-	line-height: 1.8em;
-	font-style: bold;
+.trafficinfoTitle {
+	text-align: left;
 }
 
-#trafficinfo p {
-	padding-top: 10px;
-	padding-bottom: 15px;
-	font-size: 14px;
+.trafficinfo{
+	text-align: justify;
+	padding-left: 2em;
 }
 
 #scheduleTable {
@@ -155,8 +152,8 @@ footer {
     color: #000000;
     height: 4em;
     text-align: center;
-	margin-top: 10%;
-    bottom: 0;
+	margin-top: 15%;
+	margin-bottom: 0;
     z-index: 50;
     overflow: hidden;
 }
@@ -182,7 +179,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 	.header {
-		/*background: #5C2E00;*/
 		height: 190px;
 	}
 	.header h1 {
