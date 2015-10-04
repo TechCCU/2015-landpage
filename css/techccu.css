@@ -96,7 +96,7 @@ section .sectionShow {
 }
 
 .speaker {
-	width: 40%;
+	text-align: center;
 }
 
 .speaker h3 {
