@@ -34,10 +34,10 @@ body {
 }
 
 .navbar  {
-    z-index: 100;
 	padding-top:250px;
 	position: fixed;
 	overflow: hidden;
+	background: #ffffff;
 }
 
 .headerWrap {
@@ -96,7 +96,7 @@ section .sectionShow {
 }
 
 .speaker {
-	width: 40%;
+	width: 80%;
 }
 
 .speaker h3 {
@@ -114,7 +114,7 @@ section .sectionShow {
 }
 
 .staff {
-	width: 18%;
+	width: 30%;
 	display: inline-block;
 	margin: none;
 	padding: none;
