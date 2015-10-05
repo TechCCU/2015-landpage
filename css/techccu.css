@@ -100,23 +100,35 @@ section .sectionShow {
     width: 60%;
 }
 
-.speaker {
-	width: 80%;
-	text-align: center;
-}
-
-.speaker h3 {
-	1.2em;
+.speaker-block {
+	display: inline-block;
+	width: 15%;
+	height: 170px;
 }
 
 .speaker-pic {
-	height: 140px;
-	width: 140px;
-	padding: 10px;
+	display: block;
 }
 
-.speaker-content {
-	padding: 10px;
+.speaker-name {
+	display: block;
+}
+
+.speaker-pic {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	height: 140px;
+	width: 140px;
+}
+
+.speaker p {
+	display: inline-block;
+	width: 80%;
+	height: 170px;
+	margin: auto;
 }
 
 .staff {
@@ -158,7 +170,7 @@ footer {
     color: #000000;
     height: 4em;
     text-align: center;
-	margin-top: 15%;
+	margin-top: 10%;
 	margin-bottom: 0;
     z-index: 50;
     overflow: hidden;
@@ -176,7 +188,9 @@ footer {
 		height: 240px;
 	}
 	.navbar {
-		padding-top: 190px;
+		margin-top: 190px;
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 	.speaker {
 		width: 40%;
@@ -188,14 +202,15 @@ footer {
 		height: 190px;
 	}
 	.header h1 {
-		padding-top: 10px;
 		font-size: 3.5em;
 	}
 	.headerWrap {
 		height: 240px;
 	}
 	.navbar {
-		padding-top: 190px;
+		margin-top: 190px;
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 	.speaker {
 		width: 80%;
