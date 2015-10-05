@@ -25,7 +25,7 @@ body {
 }
 
 .header h1 {
-	padding-top: 50px;
+	margin-top: 50px;
 	height: 250px;
     font-size: 6em;
     color: #FAFFFA;
@@ -34,9 +34,10 @@ body {
 }
 
 .navbar  {
-	padding-top:250px;
+	margin-top:250px;
 	position: fixed;
 	overflow: hidden;
+	text-align: center;
 	background: #ffffff;
 }
 
@@ -97,6 +98,7 @@ section .sectionShow {
 
 .speaker {
 	width: 80%;
+	text-align: center;
 }
 
 .speaker h3 {
