@@ -9,25 +9,24 @@ body {
     /*background: #f5f5f5;*/
 }
 
+.container {
+	max-width: 540px;
+}
+
 .header {
     text-align: center;
     background: url('../images/backdoor.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: 50% 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 250px;
+    height: 400px;
     z-index: 50;
     overflow: hidden;
 }
 
 .header h1 {
-	margin-top: 50px;
-	height: 250px;
-    font-size: 6em;
+	margin-top: 10px;
+	height: 200px;
+    font-size: 4.5em;
     color: #FAFFFA;
     text-shadow: 1px 1px 3px rgba(0,30,0,0.5);
     z-index: 99;
@@ -35,21 +34,14 @@ body {
 
 .navbar  {
 	width: 100%;
-	margin-top:250px;
-	padding-left: 33%;
-	padding-right: 33%;
 	position: fixed;
 	overflow: hidden;
-	align: center;
 	z-index: 50;
 	background: #ffffff;
 }
 
-.headerWrap {
-    height: 300px;
-    top: 0;
-    left: 0;
-    right: 0;
+.navbar ul {
+	text-align: right;
 }
 
 .content {
@@ -177,12 +169,20 @@ footer {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (min-width: 1920px) {
+	.container { 
+		max-width: 1600px;
+	}
+}
+
+@media screen and (min-width: 1110px) {
+	.container {
+		max-width: 960px;
+	}
 	.header {
 		height: 190px;
 	}
 	.header h1 {
-		padding-top: 10px;
 		font-size: 4em;
 	}
 	.headerWrap {
@@ -198,7 +198,10 @@ footer {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 740px;
+	}
 	.header {
 		height: 190px;
 	}
