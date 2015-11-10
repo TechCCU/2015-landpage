@@ -13,21 +13,22 @@
 
     <body>
 		<div class="container">
-			<nav id="navbar" class="navbar-right">
-				<ul class="nav nav-pills">
+		<div id="header" class="header jumbotron">
+            <h1>TechCCU 2015 Workshop</h1>
+			<button href="ticket/apply" class="btn btn-info">立即報名</button>
+        </div>
+		<nav class="navbar navbar">
+				<ul class="nav nav-pills nav-justified">
 					<li class="active"><a href="#info">簡介</a></li>
 					<li ><a href="#traffic">交通資訊</a></li>
 					<li ><a href="#schedule">議程</a></li>
 					<li ><a href="#speakers">講者</a></li>
 					<li ><a href="#staffs">工作人員</a></li>
 				</ul>
-			</nav>
-		<div id="header" class="header jumbotron">
-            <h1>TechCCU 2015 Workshop</h1>
-        </div>
+		</nav>
 
 		<div id="content" class="content">
-			<section id="info" class="col-md-12 sectionShow">
+			<section id="info" class="row sectionShow">
 
 				<div id="infotext" class="col-md-6 col-md-offset-2">
 
@@ -43,14 +44,14 @@
 					<span>TBD</span>
 					<h3>IRC Channel</h3>
 					<span>freenode#TechCCU</span></br></br></br>
-					<button href="ticket/apply" class="btn btn-primary">立即報名</button>
+					
 				</div>
 			</section>
 
-			<section id="traffic" class="col-md-12 sectionHide">
+			<section id="traffic" class="row sectionHide">
 
-				<div id="map" class="col-md-8"></div>
-				<div id "trafficinfo" class="col-md-4">
+				<div id="map" class="col-md-12 col-xs-12"></div>
+				<div id "trafficinfo" class="col-md-12 col-xs-12">
 					<h3 class="trafficinfoTitle">開車到中正</h3>
 					<p class="trafficinfo">
 					<b>經國道一號</b></br>
@@ -66,7 +67,7 @@
 				</div>
 			</section>
 
-			<section id="schedule" class="col-md-12 sectionHide">
+			<section id="schedule" class="row sectionHide">
 
 				<table id="scheduleTable" class="table">
 					<thead>
@@ -125,18 +126,15 @@
 				</table>
 			</section>
 
-            <section id="speakers" class="col-md-12 sectionHide">
+            <section id="speakers" class="row sectionHide">
 				
 					<div class="row">
 						<div class="col-xs-12 col-md-4">
 							<img class="img-circle speaker-pic" src="images/nobody_s.jpg"></img>
 							<h3 class="speaker-name">藏鏡人</h3>
 						</div>
-						<p class="col-xs-12 col-md-8">
-						順我者生，逆我者亡。
-						隱身令天下，現身戮萬軍。
-						藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。
-						脫離三教外，不在五行中，轟動武林，驚動萬教萬惡的罪魁藏鏡人也！
+						<p class="speaker-content col-xs-12 col-md-8">
+						順我者生，逆我者亡。隱身令天下，現身戮萬軍。藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。脫離三教外，不在五行中，轟動武林，驚動萬教萬惡的罪魁藏鏡人也！
 						</p>
 					</div>
 					<div class="row">
@@ -144,16 +142,14 @@
 							<img class="img-circle speaker-pic" src="images/nobody_s.jpg">
 							<h3 class="speaker-name">藏鏡人</h3>
 						</div>
-						<p class="col-xs-12 col-md-8">順我者生，逆我者亡。
-						隱身令天下，現身戮萬軍。
-						藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。
-						脫離三教外，不在五行中，轟動武林，驚動萬教萬惡的罪魁藏鏡人也！
+						<p class="speaker-content col-xs-12 col-md-8">
+						順我者生，逆我者亡。隱身令天下，現身戮萬軍。藏龍臥虎今懦夫，鏡裡罪容化成無；人情冷暖難回首，嘆留多少傷心事。脫離三教外，不在五行中，轟動武林，驚動萬教萬惡的罪魁藏鏡人也！
 						</p>
 					</div>
 				
 			</section>
 
-			<section id="staffs" class="col-md-12 sectionHide">
+			<section id="staffs" class="row sectionHide">
 				<div class="row">
 					<div class="col-md-4 col-xs-6">
 						<img class="img-circle staff-pic" src="images/terces_w.jpg">
