@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 60%;
 	margin-bottom: 0;
-	height: 300px;
+	height: 240px;
 }
 
 .header h1 {
@@ -108,7 +108,7 @@ section .sectionShow {
 }
 
 .speaker-content {
-	text-align: left;
+	text-align: center;
 }
 
 .staff {
@@ -158,13 +158,16 @@ footer {
 
 @media screen and (min-width: 1920px) {
 	.container { 
-		max-width: 1600px;
+		max-width: 1780px;
+	}
+	.speaker-content {
+		text-align: left;
 	}
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1110px) and (max-width: 1919px){
 	.container {
-		max-width: 960px;
+		max-width: 1080px;
 	}
 	.header {
 		height: 290px;
@@ -172,9 +175,12 @@ footer {
 	.header h1 {
 		font-size: 4em;
 	}
+	.speaker-content {
+		text-align: left;
+	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1109px) {
 	.container {
 		max-width: 740px;
 	}
@@ -183,11 +189,5 @@ footer {
 	}
 	.header h1 {
 		font-size: 3.5em;
-	}
-	.speaker {
-		width: 80%;
-	}
-	.staff {
-		width: 40%;
 	}
 }
